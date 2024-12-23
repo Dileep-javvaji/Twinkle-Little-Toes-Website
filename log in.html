@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("https://res.cloudinary.com/dirp0dvkg/image/upload/v1685203678/soc%20project/edgar-chaparro-Lh-CTP558tc-unsplash_ewr5dd.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 100px;
+      background-color: rgba(248, 136, 39, 0.692);
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 5px;
+    }
+    
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="log in.jsp" method="post">
+      <div class="form-group">
+        <label for="email_id">Email Id:</label>
+        <input type="text" id="email_id" name="email_id" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="submit"><br>
+        <p>Don't have an account? <a href="Sign_up.html">Sign up</p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Delete Data</title>
+        <style>
+            body {
+             background-image: url("https://res.cloudinary.com/dirp0dvkg/image/upload/v1697791621/background%20pics/bg4_ihnwkz.jpg");
+             background-size: cover;
+             background-repeat: no-repeat;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 45vh;
+             margin: 0;
+           }
+           .button-container {
+             background-color: rgba(35, 20, 235, 0.692);
+             padding: 20px;
+             border-radius: 5px;
+             text-align: left;
+           }
+        </style>
+    </head>
+    <body align="center">
+        <div class="button-container">
+        <h1>Delete Data</h1>
+        <form action="/delete" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter full name of the record to delete" required><br><br>
+            <center><input type="submit" value="Submit"></center>
+        </form>
+    </div>
+    </body>
+</html>

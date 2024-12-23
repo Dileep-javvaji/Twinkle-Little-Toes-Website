@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Record</title>
+    <style>
+        body {
+         background-image: url("https://res.cloudinary.com/dirp0dvkg/image/upload/v1685203698/soc%20project/rick-govic-Jxtrv7OJJOM-unsplash_p6zijg.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+       }
+       
+       .button-container {
+         background-color: rgba(143, 229, 228, 0.692);
+         padding: 20px;
+         border-radius: 5px;
+         text-align: center;
+       }
+    </style>
+</head>
+<body align="center">
+    <div class="button-container">
+    <h1>Update Record</h1>
+    <form action="/display" method="POST">
+    <label for="emailid">E-Mail ID:</label>
+    <input type="text" name="emailid" id="emailid" required><br>
+    <br><button type="submit">Check Details</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Record</title>
+    <style>
+        body {
+         background-image: url("https://res.cloudinary.com/dirp0dvkg/image/upload/v1697791624/background%20pics/bgll_rrfhxg.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+       }
+       
+       .button-container {
+         background-color: rgba(89, 214, 160, 0.534);
+         padding: 20px;
+         border-radius: 5px;
+         text-align: center;
+       }
+    </style>
+</head>
+<body align="center">
+    <div class="button-container">
+    <h1>Update Record</h1>
+    <form action="/update" method="POST">
+        <table align="center" celpadding="4" cellspacing="4">
+        <tbody>
+        <tr>
+        <td><label for="emailid">E-Mail ID:</label></td>
+        <td><input type="text" name="emailid" id="emailid" required></td>
+        </tr>
+        <tr>
+        <td><label for="newadd">New Address:</label></td>
+        <td><input type="text" name="newadd" id="newadd" required></td>
+        </tr>
+        <tr>
+        <td><label for="newcol">New Color:</label></td>
+        <td><input type="text" name="newcol" id="newcol" required></td>
+        </tr>
+        <tr>
+        <td><label for="newqnt">New Quantity:</label></td>
+        <td><input type="text" name="newqnt" id="newqnt" required></td>
+        </tr>
+    </tbody>
+    </table>
+    <br><button type="submit">Update Record</button>
+    </form>
+</div>
+</body>
+</html>

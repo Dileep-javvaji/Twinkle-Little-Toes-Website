@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("https://res.cloudinary.com/dirp0dvkg/image/upload/v1685203678/soc%20project/edgar-chaparro-Lh-CTP558tc-unsplash_ewr5dd.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 100px;
+      background-color: rgba(248, 136, 39, 0.692);
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 5px;
+    }
+    
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Complete this form to Place The Order.</h1>
+    <form action="/insert" method="POST">
+      <table align="center" border="1" cellpadding="6" cellspacing="6">
+        <tbody>
+        <tr>
+         <td><label for="fullname">Full Name:</label></td>
+         <td><input type="text" id="fullname" name="fullname" required></td>
+        </tr>
+        <tr>
+         <td><label for="email">Email:</label></td>
+         <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+         <td><label for="phno">Phone Number:</label></td>
+         <td><input type="number" id="phno" name="phno" required></td>
+        </tr>
+         <tr>
+         <td><label for="pincode">Pincode:</label></td>
+         <td><input type="number" id="pincode" name="pincode" required></td>
+         </tr>
+         <tr>
+         <td><label for="state">State:</label></td>
+         <td><input type="text" id="state" name="state" required></td>
+         </tr>
+         <tr>
+         <td><label for="city">City:</label></td>
+         <td><input type="text" id="city" name="city" required></td>
+         </tr>
+         <tr>
+         <td><label for="address">Address:</label></td>
+         <td><input type="text" id="address" name="address" placeholder="House No.,Building Name" required></td>
+         </tr>
+        </tbody>
+        </table>
+        <br>
+        <h1>Order Summary</h1>
+        <table align="center" border="1" cellpadding="6" cellspacing="6">
+            <tbody>
+                <tr>
+                    <td><label for="size">Size:</label></td>
+                    <td><select name="size" id="size">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <td><label for="color">Color:</label></td>
+                    <td><select name="color" id="color">
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="yellow">Yellow</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="qnt" id="qnt">Quantity</td>
+                    <td><select name="qnt" id="qnt">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="more">More</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <td><label for="payment" id="payment">Payment Mode:</td>
+                    <td><select name="payment" id="payment">
+                        <option value="upi">UPI</option>
+                        <option value="wallet">Wallet/Postpaid</option>
+                        <option value="creditcard">Credit/Debit/ATM Card</option>
+                        <option value="netbanking">Net Banking</option>
+                        <option value="cashondelivery">Cash on Delivery</option>
+                      </select></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

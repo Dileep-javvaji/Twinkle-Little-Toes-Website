@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twinkle Little Toes</title>
+        <script>
+            function printmyreview(){
+var review = document.getElementById("myReview").value 
+var name = "-By ";
+name += document.getElementById("myName").value 
+document.getElementById("writeReview").innerHTML=review 
+document.getElementById("reviewrName").innerHTML=name 
+}
+    </script>
+        <style>
+            .brand-details{
+    text-align: center;
+    background-image: linear-gradient(to right, #0d0f7b, #0d0f7b, #0d0f7b);
+    background-size: cover;
+    padding: 16px;
+    
+
+}
+.btn {
+ --color: #00A97F;
+ --color2: rgb(10, 25, 30);
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: .3px solid var(--color);
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 300;
+ font-size: 17px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: var(--color);
+}
+
+.btn::after, .btn::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: var(--color);
+}
+
+.btn::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+ color: var(--color2);
+}
+
+.btn:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}
+.Restaurent-name{
+    color: #f40909;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+.section-name{
+    color: #e48407;
+}
+.item-details {
+    color: rgb(234, 245, 17);
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: "Sans-serif";
+    font-weight: bold;
+    
+}
+
+.restaurant-bg-image {
+    background-image: url("https://res.cloudinary.com/dirp0dvkg/image/upload/v1685203777/soc%20project/craig-lovelidge-v1UDAHfmdZ8-unsplash_m9yk0a.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+   
+
+}
+.quote-card-details{
+    display: flex;
+    justify-content: space-around;
+}
+.restaurent-quote{
+    background-color: rgb(79, 2, 121);
+    color: rgba(77, 232, 209, 0.966);
+    text-align: center;
+    box-shadow: #de0dc6;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+
+}
+.row::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-20{width: 20%;};
+.col-50{width: 50%;};
+
+.col-3{width: 100%;};
+
+*{
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    padding: 10px;
+}
+.item-card{
+    box-shadow: 1px 1px 2px black;
+    border-radius: 10px;
+    margin: 5px;
+}
+.menu-item-details{
+    width: 100%;
+    border-radius: 10px;
+}
+.item-name{
+    font-size: 18px;
+    color: rgb(19, 1, 10);
+    font-weight: bold;
+}
+.item-price{
+    color: black;
+    font-weight: bold;
+}
+.mandi-description{
+    color: #3f2903;
+    font-weight: bold;
+    font-size: 24px;
+}
+.mandi-card{
+    background-image: linear-gradient(to right, #bfe479, #b7ccaa,  #bfe479);
+    background-size: cover;
+}
+.paragraph-details{
+    color: rgb(0, 71, 95);
+    font-family:  sans-serif;
+    font-size: large;
+}
+.order-online-container{
+    margin-top: 16px;
+}
+.offer-description{
+    color: #8b3307;
+ 
+    font-size: 24px;
+}
+.special-offer-card{
+    background-image: radial-gradient( #81e8dc, #53c9d1,  #81e8dc);
+    background-size: cover;
+}
+.video-description{
+    color: #835302;
+    font-size: 24px;
+}
+
+.reviews-section{
+    text-align: center;
+    padding-left: 30px;
+}
+.review-heading{
+    color: #612000;
+    font-weight: bold;
+}
+.submit-button{
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: white;
+    background-color: rgb(20, 29, 203);
+}
+.your-review{
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    padding: 16px;
+    margin-top: 10px;
+    height: 90px;
+    width: 70%;
+}
+.element-center{
+    text-align: center;
+}
+.reviewrname{
+    font-weight: bold;
+    font-style: italic;
+
+}
+.element-right{
+    text-align: right;
+    margin-right: 10px;
+    padding-right: 10px;
+
+}
+.video-card{
+    background-image: linear-gradient(to right, #c48de3, #a959da, #a23cdd);
+    background-size: cover;
+}
+
+.contact-us-card{
+
+    background-image: linear-gradient(to bottom, #0d0f7b, #0d0f7b, #0d0f7b,  #0d0f7b);
+    background-size: cover;
+    
+    padding: 16px;
+
+}
+.logo-image-details{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+.contact-us-description{
+    color: #f7d703;
+
+}
+.doneby-details{
+    color: white;
+}
+    </style>
+
+    </head>
+
+
+    <body>
+
+    <div class="brand-details">
+       <h1 class="Restaurent-name">Twinkle Little Toes</h1>
+       <table cellpadding="5" cellspacing="30" align="center"> 
+       <thead>
+            <tr>
+            <td><a class="item-details" href="#menubarSection">Models</a></td>
+            <td><a class="item-details" href="#orderOnline">Order Online</a></td>
+            <td><a class="item-details" href="#offersSection">Offers</a></td>
+            <td><a class="item-details" href="#reviewsSection">Reviews</a></td>
+            <td><a class="item-details" href="#contactUs">Contact Us</a></td>
+            </tr>
+        </thead>
+    </table>
+    </div>
+    <div class="restaurant-bg-image">
+        <div class="quote-card-details">
+            <h1 class="restaurent-quote">
+                "Discover the Power of a Great Pair of Shoes" 
+    
+            </h1>
+        </div> 
+    </div>
+    <div class="menu-bar-details" id="menubarSection">
+        <h1 class="section-name">Brands and models</h1>
+        <h1>Sneakers and Casuals</h1>
+        <div class="row">
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685203748/soc%20project/piyush-haswani-gOSKI7KNOwc-unsplash_mqq054.jpg" alt="">
+                <h1 class="item-name">Nike</h1>
+                <p class="item-price">3999/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685205855/soc%20project/puma_nib9s1.jpg" alt="">
+                <h1 class="item-name">Puma</h1>
+                <p class="item-price">5999/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+                
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685244047/soc%20project/images_6_oqfjtb.jpg" alt="">
+                <h1 class="item-name">U.S Polo</h1>
+                <p class="item-price">4599/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685244045/soc%20project/images_7_cjswvf.jpg" alt="">
+                <h1 class="item-name">Sketchers</h1>
+                <p class="item-price">3499/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685244046/soc%20project/images_5_su6srb.jpg" alt="">
+                <h1 class="item-name">Adidas</h1>
+                <p class="item-price">6599/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+        </div>
+
+        <h1>Sport shoes</h1>
+        <div class="row">
+
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685244046/soc%20project/69165d00-872b-47fd-96e6-a43b71b058941682312346741-ADIDAS-Men-Sports-Shoes-8181682312346469-1_b9mjtb.jpg" alt="">
+                <h1 class="item-name">Adidas Football shoe</h1>
+                <p class="item-price">2999/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685244045/soc%20project/images_10_phrcuy.jpg" alt="">
+                <h1 class="item-name">Fila Vollyball Shoe</h1>
+                <p class="item-price">6999/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685244045/soc%20project/images_11_t8a4oa.jpg" alt="">
+                <h1 class="item-name">Gucci Basketball Shoe</h1>
+                <p class="item-price">3999/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685244044/soc%20project/images_12_yvavyj.jpg" alt="">
+                <h1 class="item-name">Nivya Kabaddi Shoe</h1>
+                <p class="item-price">2499/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685244047/soc%20project/images_9_hhs2nl.jpg" alt="">
+                <h1 class="item-name">Sega Football Shoe</h1>
+                <p class="item-price">1599/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            
+        </div>
+        <h1>Sneakers For Women</h1>
+        <div class="row">
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1697473697/soc%20project/puma_tv1pov.jpg" alt="">
+                <h1 class="item-name">Puma</h1>
+                <p class="item-price">2999/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1697473697/soc%20project/Mark_Loire_seui5n.jpg" alt="">
+                <h1 class="item-name">Mark Loire</h1>
+                <p class="item-price">1599/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+                
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1697473697/soc%20project/Bata_uv96ol.jpg" alt="">
+                <h1 class="item-name">Bata</h1>
+                <p class="item-price">2599/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1697473697/soc%20project/sparks_undh1m.jpg" alt="">
+                <h1 class="item-name">Sparx</h1>
+                <p class="item-price">2499/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+            <div class="col-20 item-card">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1697473697/soc%20project/crocks_loykop.jpg" alt="">
+                <h1 class="item-name">Crocks</h1>
+                <p class="item-price">1599/- Rs</p>
+                <a href="/order"><button class="btn">Buy Now</button></a>
+            </div>
+        </div>
+
+        <h1>Special Brand new shoe</h1>
+        <div class="row item-card mandi-card">
+            <div class="col-50">
+                <p class="mandi-description">
+                    <b><i>La Medusa</i></b><br>
+                    A futuristic and dynamic design, these lightweight slip-on trainers are set on rubber soles with perforated toe caps. A rubberised La Medusa features on the uppers for a three-dimensional effect.<br>
+                    La Medusa<br>
+                    Perforated toe caps<br>
+                    Logo patch on tongue<br>
+                    Upper: 100% Calf Leather<br>
+                    Sole: 100% EVA<br>
+                    Made in Italy
+                </p>
+
+            </div>
+
+            <div class="col-50">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685244045/soc%20project/images_13_ubql55.jpg"
+                 alt="">
+
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="order-online-container" id="orderOnline">
+        <h1 class="section-name">Order Online</h1>
+        <div class="row">
+            <div class="col-50 item-card order-online-card">
+                <h2>Order Online</h2>
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dirp0dvkg/image/upload/v1685260151/pexels-karolina-grabowska-4968391_go1xnp.jpg"
+                alt="">
+                <p class="paragraph-details">
+                    "Welcome to our online ordering service! You can now place your orders for pickup or delivery directly through WhatsApp. 
+                    Simply send us a message with your order and preferred pickup or delivery time,
+                     and we'll take care of the rest. Our team will prepare your order with the same care 
+                     and attention to detail as if you were dining with us in person. Thank you for choosing to order with us, and we hope to see you again soon!"                                    
+                </p>
+
+            </div>           
+           
+        </div>
+
+
+
+    </div>
+
+    <div class="offers-section " id="offersSection">
+        <h1 class="section-name">Special Offers</h1>
+
+        <div class="row item-card special-offer-card">
+            <div class="col-50">
+                <img class="menu-item-details"
+                src="https://res.cloudinary.com/dxvvrvbno/image/upload/v1672213088/SOC%20Project/sale-promotion-ad-poster-design-template_53876-57882_svf7z5.webp"
+                 alt="">
+            </div>
+
+            <div class="col-50 ">
+                <p class="offer-description">
+                    "Attention students! We are excited to announce a special offer just for you. 
+                    For a limited time, present your student ID at the time of payment and receive 
+                    a <b><i>30%</i></b> discount on your deal.Don't miss out on this opportunity to save on your next 
+                      visit to our store. We can't wait to see you!"
+                    </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="">
+
+        <h1 class="section-name">Our Designs</h1>
+
+
+        <div class="row item-card video-card">
+            <div class="col-50">
+                <p class="video-description">
+                    Introducing the ultimate shoe shopping experience at our brand-new store! Step into style and savings with our exciting promotions. Discover a wide range of trendy footwear for every occasion and find your perfect pair at unbeatable prices. Whether you're looking for athletic sneakers, elegant heels, comfortable flats, or casual boots, our diverse collection has got you covered. Don't miss out on our limited-time offers, including buy-one-get-one deals, exclusive discounts, and loyalty rewards. Step up your fashion game and treat your feet to the latest footwear trends. Hurry in and experience the joy of finding your sole mate at our new shoe store!
+                </p>
+
+            </div>
+            <div class="col-50">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/nMdBtOdzXhQ" 
+                title="YouTube video player" frameborder="0"
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div  id="reviewsSection">
+
+        <h1 class="section-name">Write a Review</h1>
+        
+       </div class="reviews-section-card">
+         <div class="reviews-section">
+            <p class="review-heading">We value your feedback and would love to hear about your experience at our website</p>
+            <input type="text" size="100" id="myReview">
+         </div>
+          <br>
+          <div class="reviews-section">
+            <p class="review-heading">Your name</p>
+            <input type="text" size="100" id="myName">
+          </div>
+          <br>
+          <div class="reviews-section">
+            <button class="submit-button" type="button" onclick="printmyreview()">Submit</button>
+          </div>
+          
+
+          <div>
+
+            <div class="your-review">
+                <div class="element-center">
+                <p id="writeReview"></p>
+                
+                </div>
+                <div class="element-center">
+                <a class="element-right"><p id="reviewrName" class="reviewrname"></p></a>
+               </div>
+
+               <div>
+                <p id="thankyouReview"></p>
+               </div>
+            </div>
+          </div>
+
+          <div id="contactUs">
+            <h1 class="section-name">Contact Us</h1>
+
+            <div class="contact-us-card">
+
+                <div class="element-center">
+                    <h1 class="Restaurent-name">Twinkle Little Toes</h1>
+                </div>
+                <div>
+                    <p class="contact-us-description"> <b>Address: </b>  Lakireddy Bali Reddy Engineers Restaurant, Mylavaram, Krishna (Dt.),Andhra Pradesh, India - 521 230 </p>
+                    <p class="contact-us-description"><b>Mobile: </b>9398608162</p>
+                </div>
+                <hr>
+                <div class="element-center">
+                <p class="doneby-details">Done by <b>J DILEEP</b> with HTML, CSS, JavaScript </p>
+               </div>
+            </div>
+
+          </div>
+    </body>
+</html>

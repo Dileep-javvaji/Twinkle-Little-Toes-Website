@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Record</title>
+    <style>
+        body {
+         background-image: url("https://res.cloudinary.com/dirp0dvkg/image/upload/v1697791621/background%20pics/bg3_wzd16o.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+       }
+       
+       .button-container {
+         background-color: rgba(56, 163, 50, 0.692);
+         padding: 20px;
+         border-radius: 5px;
+         text-align: center;
+       }
+    </style>
+</head>
+<body align="center">
+    <div class="button-container">
+    <h1>Display Record</h1>
+    <form action="/display" method="POST">
+        <label for="emailid">E-Mail ID:</label>
+        <input type="text" name="emailid" id="emailid" required><br><br>
+        <button type="submit">Display Record</button>
+    </form>
+</div>
+</body>
+</html>
